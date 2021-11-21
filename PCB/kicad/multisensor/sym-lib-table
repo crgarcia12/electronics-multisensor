@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name multisensor-rescue)(type Legacy)(uri ${KIPRJMOD}/multisensor-rescue.lib)(options "")(descr ""))
+  (lib (name BH1750FVI-TR)(type Legacy)(uri ${KIPRJMOD}/components/BH1750FVI-TR/BH1750FVI-TR.lib)(options "")(descr ""))
+)
