@@ -327,8 +327,6 @@ Wire Notes Line
 Wire Notes Line
 	2200 2700 600  2700
 Wire Notes Line
-	600  2700 600  1850
-Wire Notes Line
 	1900 1750 1900 500 
 Wire Notes Line
 	1900 500  600  500 
@@ -361,228 +359,457 @@ Wire Wire Line
 	9050 1300 9050 1900
 Wire Wire Line
 	9050 1900 9350 1900
-Text GLabel 1600 3600 0    50   Input ~ 0
+Text GLabel 3000 1350 0    50   Input ~ 0
 SDA
-Text GLabel 1600 3500 0    50   Input ~ 0
+Text GLabel 3000 1250 0    50   Input ~ 0
 SCL
-Text GLabel 2950 3900 2    50   Input ~ 0
+Text GLabel 4350 1650 2    50   Input ~ 0
 GND
 $Comp
 L Device:CP C?
 U 1 1 619CE26C
-P 2900 3500
-F 0 "C?" H 3018 3546 50  0000 L CNN
-F 1 "100nF" H 3018 3455 50  0000 L CNN
-F 2 "" H 2938 3350 50  0001 C CNN
-F 3 "~" H 2900 3500 50  0001 C CNN
-	1    2900 3500
+P 4300 1250
+F 0 "C?" H 4418 1296 50  0000 L CNN
+F 1 "100nF" H 4418 1205 50  0000 L CNN
+F 2 "" H 4338 1100 50  0001 C CNN
+F 3 "~" H 4300 1250 50  0001 C CNN
+	1    4300 1250
 	1    0    0    -1  
 $EndComp
-Text GLabel 2950 3100 2    50   Input ~ 0
+Text GLabel 4350 850  2    50   Input ~ 0
 VDD3V3
 Wire Wire Line
-	2900 3100 2800 3100
+	4300 850  4200 850 
 Wire Wire Line
-	2900 3100 2950 3100
-Connection ~ 2900 3100
+	4300 850  4350 850 
+Connection ~ 4300 850 
 Wire Wire Line
-	2900 3100 2900 3350
+	4300 850  4300 1100
 Wire Wire Line
-	2900 3650 2900 3900
+	4300 1400 4300 1650
 Wire Wire Line
-	2800 3900 2900 3900
-Connection ~ 2900 3900
+	4200 1650 4300 1650
+Connection ~ 4300 1650
 Wire Wire Line
-	2900 3900 2950 3900
+	4300 1650 4350 1650
 $Comp
 L Device:R R?
 U 1 1 619D230C
-P 1200 3300
-F 0 "R?" V 1300 3300 50  0000 C CNN
-F 1 "1kΩ" V 1200 3300 50  0000 C CNN
-F 2 "" V 1130 3300 50  0001 C CNN
-F 3 "~" H 1200 3300 50  0001 C CNN
-	1    1200 3300
+P 2600 1050
+F 0 "R?" V 2700 1050 50  0000 C CNN
+F 1 "1kΩ" V 2600 1050 50  0000 C CNN
+F 2 "" V 2530 1050 50  0001 C CNN
+F 3 "~" H 2600 1050 50  0001 C CNN
+	1    2600 1050
 	0    -1   -1   0   
 $EndComp
 $Comp
 L BH1750FVI-TR:BH1750FVI-TR U?
 U 1 1 619CC456
-P 2200 3500
-F 0 "U?" H 2200 4167 50  0000 C CNN
-F 1 "BH1750FVI-TR" H 2200 4076 50  0000 C CNN
-F 2 "XDCR_BH1750FVI-TR" H 2200 3500 50  0001 L BNN
-F 3 "" H 2200 3500 50  0001 L BNN
-F 4 "Rohm" H 2200 3500 50  0001 L BNN "MANUFACTURER"
-F 5 "D" H 2200 3500 50  0001 L BNN "PARTREV"
-F 6 "Manufacturer recommendations" H 2200 3500 50  0001 L BNN "STANDARD"
-F 7 "0.75mm" H 2200 3500 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
-	1    2200 3500
+P 3600 1250
+F 0 "U?" H 3600 1917 50  0000 C CNN
+F 1 "BH1750FVI-TR" H 3600 1826 50  0000 C CNN
+F 2 "XDCR_BH1750FVI-TR" H 3600 1250 50  0001 L BNN
+F 3 "" H 3600 1250 50  0001 L BNN
+F 4 "Rohm" H 3600 1250 50  0001 L BNN "MANUFACTURER"
+F 5 "D" H 3600 1250 50  0001 L BNN "PARTREV"
+F 6 "Manufacturer recommendations" H 3600 1250 50  0001 L BNN "STANDARD"
+F 7 "0.75mm" H 3600 1250 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+	1    3600 1250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:CP C?
 U 1 1 619D43E6
-P 1050 3500
-F 0 "C?" H 1168 3546 50  0000 L CNN
-F 1 "100nF" H 1168 3455 50  0000 L CNN
-F 2 "" H 1088 3350 50  0001 C CNN
-F 3 "~" H 1050 3500 50  0001 C CNN
-	1    1050 3500
+P 2450 1250
+F 0 "C?" H 2568 1296 50  0000 L CNN
+F 1 "100nF" H 2568 1205 50  0000 L CNN
+F 2 "" H 2488 1100 50  0001 C CNN
+F 3 "~" H 2450 1250 50  0001 C CNN
+	1    2450 1250
 	1    0    0    -1  
 $EndComp
-Text GLabel 950  3700 0    50   Input ~ 0
+Text GLabel 2350 1450 0    50   Input ~ 0
 GND
-Text GLabel 950  3300 0    50   Input ~ 0
+Text GLabel 2350 1050 0    50   Input ~ 0
 VDD3V3
 $Comp
 L Device:R R?
 U 1 1 619D97F7
-P 1200 3700
-F 0 "R?" V 1100 3700 50  0000 C CNN
-F 1 "4.7kΩ" V 1200 3700 50  0000 C CNN
-F 2 "" V 1130 3700 50  0001 C CNN
-F 3 "~" H 1200 3700 50  0001 C CNN
-	1    1200 3700
+P 2600 1450
+F 0 "R?" V 2500 1450 50  0000 C CNN
+F 1 "4.7kΩ" V 2600 1450 50  0000 C CNN
+F 2 "" V 2530 1450 50  0001 C CNN
+F 3 "~" H 2600 1450 50  0001 C CNN
+	1    2600 1450
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	950  3300 1050 3300
+	2350 1050 2450 1050
 Wire Wire Line
-	1350 3300 1600 3300
+	2750 1050 3000 1050
 Wire Wire Line
-	1600 3700 1350 3700
+	3000 1450 2750 1450
 Wire Wire Line
-	1050 3700 950  3700
+	2450 1450 2350 1450
 Wire Wire Line
-	1050 3700 1050 3650
-Connection ~ 1050 3700
+	2450 1450 2450 1400
+Connection ~ 2450 1450
 Wire Wire Line
-	1050 3350 1050 3300
-Connection ~ 1050 3300
+	2450 1100 2450 1050
+Connection ~ 2450 1050
 Wire Notes Line
-	600  2750 600  4050
+	2000 500  2000 1800
 Wire Notes Line
-	600  4050 3300 4050
+	2000 1800 4700 1800
 Wire Notes Line
-	3300 4050 3300 2750
+	4700 1800 4700 500 
 Wire Notes Line
-	3300 2750 600  2750
+	4700 500  2000 500 
 Wire Wire Line
 	7400 850  7450 850 
 Wire Wire Line
 	7250 850  7450 850 
+Text GLabel 2500 2200 0    50   Input ~ 0
+EN
+Text GLabel 2500 2650 0    50   Input ~ 0
+IO0
 $Comp
-L RF_Module:ESP32-WROOM-32D U?
-U 1 1 619F3EC8
-P 5400 5150
-F 0 "U?" H 4800 3900 50  0000 C CNN
-F 1 "ESP32-WROOM-32D" H 4800 3750 50  0000 C CNN
-F 2 "RF_Module:ESP32-WROOM-32" H 5400 3650 50  0001 C CNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf" H 5100 5200 50  0001 C CNN
-	1    5400 5150
+L Switch:SW_Push SW?
+U 1 1 61ABB478
+P 2700 2200
+F 0 "SW?" H 2700 2485 50  0000 C CNN
+F 1 "EN-Switch" H 2700 2394 50  0000 C CNN
+F 2 "" H 2700 2400 50  0001 C CNN
+F 3 "~" H 2700 2400 50  0001 C CNN
+	1    2700 2200
 	1    0    0    -1  
 $EndComp
-Text GLabel 5400 3100 1    50   Input ~ 0
-VDD3V3
-Wire Notes Line
-	5550 4150 5550 2900
-Text GLabel 5750 3350 2    50   Input ~ 0
+$Comp
+L Switch:SW_Push SW?
+U 1 1 61ABE613
+P 2700 2650
+F 0 "SW?" H 2700 2935 50  0000 C CNN
+F 1 "IO0-Switch" H 2700 2844 50  0000 C CNN
+F 2 "" H 2700 2850 50  0001 C CNN
+F 3 "~" H 2700 2850 50  0001 C CNN
+	1    2700 2650
+	1    0    0    -1  
+$EndComp
+Text GLabel 3150 2400 2    50   Input ~ 0
 GND
+Wire Wire Line
+	2900 2200 3150 2200
+Wire Wire Line
+	3150 2650 2900 2650
+Wire Wire Line
+	3150 2200 3150 2650
+Wire Notes Line
+	2250 1850 3400 1850
+Wire Notes Line
+	3400 1850 3400 2750
+Wire Notes Line
+	2250 2750 2250 1850
 $Comp
-L Device:CP C?
-U 1 1 619F7095
-P 5550 3500
-F 0 "C?" H 5200 3550 50  0000 L CNN
-F 1 "100nF" H 5200 3450 50  0000 L CNN
-F 2 "" H 5588 3350 50  0001 C CNN
-F 3 "~" H 5550 3500 50  0001 C CNN
-	1    5550 3500
-	0    -1   -1   0   
+L Transistor_BJT:2N2219 Q?
+U 1 1 61ACE558
+P 5950 900
+F 0 "Q?" H 6140 946 50  0000 L CNN
+F 1 "2N2219" H 6140 855 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 6150 825 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 5950 900 50  0001 L CNN
+	1    5950 900 
+	1    0    0    -1  
 $EndComp
-$Comp
-L Device:CP C?
-U 1 1 619F81A2
-P 5550 3150
-F 0 "C?" H 5300 3200 50  0000 L CNN
-F 1 "22uF" H 5250 3100 50  0000 L CNN
-F 2 "" H 5588 3000 50  0001 C CNN
-F 3 "~" H 5550 3150 50  0001 C CNN
-	1    5550 3150
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5400 3100 5400 3150
-Connection ~ 5400 3150
-Wire Wire Line
-	5400 3150 5400 3500
-Connection ~ 5400 3500
-Wire Wire Line
-	5400 3500 5400 3750
-Wire Wire Line
-	5700 3150 5700 3350
-Wire Wire Line
-	5750 3350 5700 3350
-Connection ~ 5700 3350
-Wire Wire Line
-	5700 3350 5700 3500
-Text GLabel 4800 3950 0    50   Input ~ 0
+Text GLabel 6150 1200 2    50   Input ~ 0
+IO0
+Text GLabel 6150 650  2    50   Input ~ 0
 EN
-NoConn ~ 4800 4150
-NoConn ~ 4800 4250
-Text GLabel 6000 4250 2    50   Input ~ 0
-RXD0
-Text GLabel 6000 4050 2    50   Input ~ 0
-TXD0
-Text GLabel 6650 5350 2    50   Input ~ 0
-SDA
-Text GLabel 6650 5450 2    50   Input ~ 0
-SCL
 $Comp
 L Device:R R?
-U 1 1 61A03689
-P 6550 5150
-F 0 "R?" V 6450 5150 50  0000 C CNN
-F 1 "4.7kΩ" V 6550 5150 50  0000 C CNN
-F 2 "" V 6480 5150 50  0001 C CNN
-F 3 "~" H 6550 5150 50  0001 C CNN
-	1    6550 5150
+U 1 1 61AD82EE
+P 5450 1450
+F 0 "R?" V 5350 1450 50  0000 C CNN
+F 1 "10kΩ" V 5450 1450 50  0000 C CNN
+F 2 "" V 5380 1450 50  0001 C CNN
+F 3 "~" H 5450 1450 50  0001 C CNN
+	1    5450 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61AD6A1A
+P 5450 900
+F 0 "R?" V 5350 900 50  0000 C CNN
+F 1 "10kΩ" V 5450 900 50  0000 C CNN
+F 2 "" V 5380 900 50  0001 C CNN
+F 3 "~" H 5450 900 50  0001 C CNN
+	1    5450 900 
+	0    1    1    0   
+$EndComp
+Text GLabel 5150 900  0    50   Input ~ 0
+DTR
+Text GLabel 5150 1450 0    50   Input ~ 0
+RTS
+Wire Wire Line
+	6150 650  6050 650 
+Wire Wire Line
+	6050 650  6050 700 
+Wire Wire Line
+	6150 1200 6050 1200
+Wire Wire Line
+	6050 1200 6050 1250
+Wire Wire Line
+	6050 1650 5200 1650
+Wire Wire Line
+	5600 1450 5750 1450
+Wire Wire Line
+	5750 900  5600 900 
+$Comp
+L Transistor_BJT:2N2219 Q?
+U 1 1 61AD2C08
+P 5950 1450
+F 0 "Q?" H 6140 1496 50  0000 L CNN
+F 1 "2N2219" H 6140 1405 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-39-3" H 6150 1375 50  0001 L CIN
+F 3 "http://www.onsemi.com/pub_link/Collateral/2N2219-D.PDF" H 5950 1450 50  0001 L CNN
+	1    5950 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 1450 5250 1450
+Wire Wire Line
+	5150 900  5200 900 
+Wire Wire Line
+	6050 1100 5250 1100
+Wire Wire Line
+	5250 1100 5250 1450
+Connection ~ 5250 1450
+Wire Wire Line
+	5250 1450 5300 1450
+Wire Wire Line
+	5200 900  5200 1650
+Connection ~ 5200 900 
+Wire Wire Line
+	5200 900  5300 900 
+Wire Notes Line
+	4750 500  6450 500 
+Wire Notes Line
+	6450 500  6450 1800
+Wire Notes Line
+	6450 1800 4750 1800
+Wire Notes Line
+	4750 1800 4750 500 
+Wire Notes Line
+	3400 2750 2250 2750
+Text GLabel 3100 3850 2    50   Input ~ 0
+IO0
+Wire Notes Line
+	4000 2800 600  2800
+Wire Notes Line
+	4000 6750 4000 2800
+Wire Notes Line
+	600  6800 4000 6800
+Text GLabel 3100 5850 2    50   Input ~ 0
+STATUSLED
+Wire Wire Line
+	1450 4950 1450 5100
+Text GLabel 1450 5400 3    50   Input ~ 0
+GND
+$Comp
+L Device:LED D?
+U 1 1 61A8A33B
+P 1450 5250
+F 0 "D?" V 1489 5132 50  0000 R CNN
+F 1 "LED" V 1398 5132 50  0000 R CNN
+F 2 "" H 1450 5250 50  0001 C CNN
+F 3 "~" H 1450 5250 50  0001 C CNN
+	1    1450 5250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61A88C9C
+P 1450 4800
+F 0 "R?" V 1350 4800 50  0000 C CNN
+F 1 "1kΩ" V 1450 4800 50  0000 C CNN
+F 2 "" V 1380 4800 50  0001 C CNN
+F 3 "~" H 1450 4800 50  0001 C CNN
+	1    1450 4800
 	-1   0    0    1   
 $EndComp
+Text GLabel 1450 4650 1    50   Input ~ 0
+STATUSLED
+Text GLabel 1050 5400 3    50   Input ~ 0
+GND
+Text GLabel 1050 4650 1    50   Input ~ 0
+VDD3V3
+Wire Wire Line
+	1050 4950 1050 5000
+$Comp
+L Device:R R?
+U 1 1 61A80F46
+P 1050 4800
+F 0 "R?" V 950 4800 50  0000 C CNN
+F 1 "10kΩ" V 1050 4800 50  0000 C CNN
+F 2 "" V 980 4800 50  0001 C CNN
+F 3 "~" H 1050 4800 50  0001 C CNN
+	1    1050 4800
+	-1   0    0    1   
+$EndComp
+Text GLabel 1000 5000 0    50   Input ~ 0
+EN
+Text GLabel 1900 3850 0    50   Input ~ 0
+EN
+$Comp
+L Device:CP C?
+U 1 1 61A799BD
+P 1050 5250
+F 0 "C?" H 700 5300 50  0000 L CNN
+F 1 "100nF" H 700 5200 50  0000 L CNN
+F 2 "" H 1088 5100 50  0001 C CNN
+F 3 "~" H 1050 5250 50  0001 C CNN
+	1    1050 5250
+	1    0    0    -1  
+$EndComp
+Connection ~ 3550 4900
+Wire Wire Line
+	3550 4900 3650 4900
+Wire Wire Line
+	3550 4900 3450 4900
+Wire Wire Line
+	3550 4850 3550 4900
+Wire Wire Line
+	3450 5350 3750 5350
+Connection ~ 3450 5350
+Wire Wire Line
+	3450 5200 3450 5350
+Wire Wire Line
+	3650 5250 3100 5250
+Connection ~ 3650 5250
+Wire Wire Line
+	3650 5200 3650 5250
+Wire Wire Line
+	3100 5350 3450 5350
+Wire Wire Line
+	3750 5250 3650 5250
+Text GLabel 3550 4850 1    50   Input ~ 0
+VDD3V3
 $Comp
 L Device:R R?
 U 1 1 61A04858
-P 6350 5150
-F 0 "R?" V 6250 5150 50  0000 C CNN
-F 1 "4.7kΩ" V 6350 5150 50  0000 C CNN
-F 2 "" V 6280 5150 50  0001 C CNN
-F 3 "~" H 6350 5150 50  0001 C CNN
-	1    6350 5150
+P 3450 5050
+F 0 "R?" V 3350 5050 50  0000 C CNN
+F 1 "4.7kΩ" V 3450 5050 50  0000 C CNN
+F 2 "" V 3380 5050 50  0001 C CNN
+F 3 "~" H 3450 5050 50  0001 C CNN
+	1    3450 5050
 	-1   0    0    1   
 $EndComp
-Text GLabel 6450 4950 1    50   Input ~ 0
+$Comp
+L Device:R R?
+U 1 1 61A03689
+P 3650 5050
+F 0 "R?" V 3550 5050 50  0000 C CNN
+F 1 "4.7kΩ" V 3650 5050 50  0000 C CNN
+F 2 "" V 3580 5050 50  0001 C CNN
+F 3 "~" H 3650 5050 50  0001 C CNN
+	1    3650 5050
+	-1   0    0    1   
+$EndComp
+Text GLabel 3750 5350 2    50   Input ~ 0
+SCL
+Text GLabel 3750 5250 2    50   Input ~ 0
+SDA
+Text GLabel 3100 3950 2    50   Input ~ 0
+TXD0
+Text GLabel 3100 4150 2    50   Input ~ 0
+RXD0
+NoConn ~ 1900 4150
+NoConn ~ 1900 4050
+Wire Wire Line
+	2800 3250 2800 3400
+Connection ~ 2800 3250
+Wire Wire Line
+	2850 3250 2800 3250
+Wire Wire Line
+	2800 3050 2800 3250
+Wire Wire Line
+	2500 3400 2500 3650
+Connection ~ 2500 3400
+Wire Wire Line
+	2500 3050 2500 3400
+Connection ~ 2500 3050
+$Comp
+L Device:CP C?
+U 1 1 619F81A2
+P 2650 3050
+F 0 "C?" H 2400 3100 50  0000 L CNN
+F 1 "22uF" H 2350 3000 50  0000 L CNN
+F 2 "" H 2688 2900 50  0001 C CNN
+F 3 "~" H 2650 3050 50  0001 C CNN
+	1    2650 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 619F7095
+P 2650 3400
+F 0 "C?" H 2300 3450 50  0000 L CNN
+F 1 "100nF" H 2300 3350 50  0000 L CNN
+F 2 "" H 2688 3250 50  0001 C CNN
+F 3 "~" H 2650 3400 50  0001 C CNN
+	1    2650 3400
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2850 3250 2    50   Input ~ 0
+GND
+Text GLabel 2500 2950 0    50   Input ~ 0
 VDD3V3
+Text GLabel 2500 6450 2    50   Input ~ 0
+GND
+Wire Wire Line
+	2500 2950 2500 3050
+$Comp
+L RF_Module:ESP32-WROOM-32D U?
+U 1 1 619F3EC8
+P 2500 5050
+F 0 "U?" H 1900 3800 50  0000 C CNN
+F 1 "ESP32-WROOM-32D" H 1900 3650 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 2500 3550 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf" H 2200 5100 50  0001 C CNN
+	1    2500 5050
+	1    0    0    -1  
+$EndComp
 Wire Notes Line
-	6600 6000 6600 4750
+	600  6800 600  2800
+Wire Notes Line
+	600  2700 600  1850
 Wire Wire Line
-	6650 5350 6550 5350
+	1000 5000 1050 5000
+Connection ~ 1050 5000
 Wire Wire Line
-	6000 5450 6350 5450
-Wire Wire Line
-	6550 5300 6550 5350
-Connection ~ 6550 5350
-Wire Wire Line
-	6550 5350 6000 5350
-Wire Wire Line
-	6350 5300 6350 5450
-Connection ~ 6350 5450
-Wire Wire Line
-	6350 5450 6650 5450
-Wire Wire Line
-	6450 4950 6450 5000
-Wire Wire Line
-	6450 5000 6350 5000
-Wire Wire Line
-	6450 5000 6550 5000
-Connection ~ 6450 5000
+	1050 5000 1050 5100
+NoConn ~ 3100 4050
+NoConn ~ 3100 4250
+NoConn ~ 3100 4350
+NoConn ~ 3100 4450
+NoConn ~ 3100 4650
+NoConn ~ 3100 4750
+NoConn ~ 3100 4850
+NoConn ~ 3100 4950
+NoConn ~ 3100 5050
+NoConn ~ 3100 5150
+NoConn ~ 3100 5450
+NoConn ~ 3100 5550
+NoConn ~ 3100 5650
+NoConn ~ 3100 5950
+NoConn ~ 3100 6050
+NoConn ~ 3100 6150
+NoConn ~ 1900 5050
+NoConn ~ 1900 5150
+NoConn ~ 1900 5250
+NoConn ~ 1900 5350
+NoConn ~ 1900 5450
+NoConn ~ 1900 5550
 $EndSCHEMATC
